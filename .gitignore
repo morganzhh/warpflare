@@ -175,3 +175,5 @@ warp
 ip.txt
 result.csv
 ip.sql
+test.sql
+wrangler.toml

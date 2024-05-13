@@ -117,7 +117,7 @@ async function endpointyx() {
     const cwd = process.cwd()
     if (!fs.existsSync(`${cwd}/warp`)) {
       console.log("Unable to detect warp, currently downloading...")
-      await exec(`wget https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-linux-${archAffix()} -O ${cwd}/warp`)
+      await exec(`wget https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-darwin-${archAffix()} -O ${cwd}/warp`)
     }
 
     await exec(`sudo chmod +x ${cwd}/warp`)
